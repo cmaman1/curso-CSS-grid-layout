@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: arial;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 28px;
+        }
+
+        .search,
+        .menu {
+            justify-self: center;
+        }
+
+        .icon {
+            width: 50px;
+        }
+
+        .post-list {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(100px, 293px));
+            justify-content: center;
+            gap: 28px;
+        }
+
+        .post {
+            cursor: pointer;
+            position: relative;
+            display: block;
+        }
+
+        .post-image {
+            margin: 0;
+        }
+
+        .post-image img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .post-overlay {
+            background: rgba(0, 0, 0, .4);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .post:hover .post-overlay {
+            display: flex;
+        }
+
+        .post-likes,
+        .post-comments {
+            width: 80px;
+            margin: 5px;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+        }
+
+        @media screen and (max-width: 767px) {
+            .post-list {
+                gap: 3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+            <div class="logo">
+                <img src="img/instagram-logo.png" alt="">
+            </div>
+            <div class="search">
+                <input type="search" name="" id="">
+            </div>
+            <div class="menu">
+                <img src="img/home-logo.jpg" alt="" class="icon">
+                <img src="img/message-logo.jpg" alt="" class="icon">
+                <img src="img/likes-logo.jpg" alt="" class="icon">
+                <img src="img/user-logo.jpg" alt="" class="icon">
+            </div>
+    </section>
+    <section class="post-list">
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="img/cat1.JPG" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">50</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="img/cat2.JPG" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">50</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="img/cat3.JPG" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">50</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="img/cat4.JPG" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">50</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="img/cat5.JPG" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">50</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="img/cat6.JPG" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">50</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="img/cat7.JPG" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">50</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="img/cat8.JPG" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">50</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="img/cat9.JPG" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">50</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="img/cat10.JPG" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">50</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="img/cat11.JPG" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">50</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="img/cat12.JPG" alt="">
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post-likes">50</span>
+                    <span class="post-comments">15</span>
+                </p>
+            </span>
+        </a>
+    </section>
+</body>
+
+</html>
