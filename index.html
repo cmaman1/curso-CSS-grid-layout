@@ -28,6 +28,20 @@
             width: 50px;
         }
 
+        .user-information {
+            display: grid;
+            grid-template-columns: 1fr 2fr
+        }
+
+        .profile-photo {
+            width: 100px;
+        }
+
+        .user-details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
         .post-list {
             display: grid;
             grid-template-columns: repeat(3, minmax(100px, 293px));
@@ -99,6 +113,22 @@
                 <img src="img/likes-logo.jpg" alt="" class="icon">
                 <img src="img/user-logo.jpg" alt="" class="icon">
             </div>
+    </section>
+    <section class="user-information">
+        <div class="user-photo">
+            <img src="img/cat11.jpg" alt="" class="profile-photo">
+        </div>
+        <div class="user-details">
+            <h2>YokiSwag</h2>
+            <span class="posts"><strong>12</strong> posts</span>
+            <span class="followers"><strong>101</strong> followers</span>
+            <span class="following"><strong>0</strong> followed</span>
+            <h3>Y o k a i</h2>
+            <p>2nd summer<br />
+                I like to sleep and eat catnip<br />
+                Tiny tigger
+            </p>
+        </div>
     </section>
     <section class="post-list">
         <a href="" class="post">
