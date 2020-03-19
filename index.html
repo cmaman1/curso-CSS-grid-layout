@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
     <style>
+        .wrapper {
+            max-width: 1000px;
+        }
+
         body {
             margin: 0;
             font-family: arial;
+            display: flex;
+            justify-content: center;
         }
 
         .header {
@@ -16,12 +22,14 @@
             grid-template-columns: repeat(3, 1fr);
             justify-content: space-between;
             align-items: center;
-            margin: 0 28px;
         }
 
-        .search,
-        .menu {
+        .search {
             justify-self: center;
+        }
+
+        .menu { 
+            justify-self: end;
         }
 
         .icon {
@@ -30,16 +38,54 @@
 
         .user-information {
             display: grid;
-            grid-template-columns: 1fr 2fr
+            grid-template-columns: 1fr 2fr;
+            height: 300px;
+        }
+
+        .user-photo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .profile-photo {
-            width: 100px;
+            width: 200px;
+            border-radius: 100px;
+            border-style: double;
         }
 
         .user-details {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 2fr;
+            height: inherit;
+            grid-template-areas: "username username username"
+                                "posts followers followed"
+                                "alias alias alias"
+                                "description description description";
+            align-items: center;          
+        }
+
+        .username {
+            grid-area: username;
+            padding: 0;
+            margin: 0;
+        }
+
+        .posts {
+            grid-area: posts;
+        }
+
+        .followers {
+            grid-area: followers;
+        }
+
+        .followed {
+            grid-area: followed;
+        }
+
+        .description {
+            grid-area: description;
         }
 
         .post-list {
@@ -95,11 +141,15 @@
             .post-list {
                 gap: 3px;
             }
+            .icon {
+                width: 45px;
+            }
         }
     </style>
 </head>
 
 <body>
+    <div class="wrapper">
     <section class="header">
             <div class="logo">
                 <img src="img/instagram-logo.png" alt="">
@@ -119,12 +169,12 @@
             <img src="img/cat11.jpg" alt="" class="profile-photo">
         </div>
         <div class="user-details">
-            <h2>YokiSwag</h2>
+            <h2 class="username">YokiSwag</h2>
             <span class="posts"><strong>12</strong> posts</span>
             <span class="followers"><strong>101</strong> followers</span>
             <span class="following"><strong>0</strong> followed</span>
-            <h3>Y o k a i</h2>
-            <p>2nd summer<br />
+            <h3 class="alias">Y o k a i</h2>
+            <p class="description">2nd summer<br />
                 I like to sleep and eat catnip<br />
                 Tiny tigger
             </p>
@@ -264,6 +314,7 @@
             </span>
         </a>
     </section>
+</div>
 </body>
 
 </html>
