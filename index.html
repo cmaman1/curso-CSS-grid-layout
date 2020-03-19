@@ -5,147 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
-    <style>
-        .wrapper {
-            max-width: 1000px;
-        }
-
-        body {
-            margin: 0;
-            font-family: arial;
-            display: flex;
-            justify-content: center;
-        }
-
-        .header {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .search {
-            justify-self: center;
-        }
-
-        .menu { 
-            justify-self: end;
-        }
-
-        .icon {
-            width: 50px;
-        }
-
-        .user-information {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            height: 300px;
-        }
-
-        .user-photo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .profile-photo {
-            width: 200px;
-            border-radius: 100px;
-            border-style: double;
-        }
-
-        .user-details {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 2fr;
-            height: inherit;
-            grid-template-areas: "username username username"
-                                "posts followers followed"
-                                "alias alias alias"
-                                "description description description";
-            align-items: center;          
-        }
-
-        .username {
-            grid-area: username;
-            padding: 0;
-            margin: 0;
-        }
-
-        .posts {
-            grid-area: posts;
-        }
-
-        .followers {
-            grid-area: followers;
-        }
-
-        .followed {
-            grid-area: followed;
-        }
-
-        .description {
-            grid-area: description;
-        }
-
-        .post-list {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(100px, 293px));
-            justify-content: center;
-            gap: 28px;
-        }
-
-        .post {
-            cursor: pointer;
-            position: relative;
-            display: block;
-        }
-
-        .post-image {
-            margin: 0;
-        }
-
-        .post-image img {
-            width: 100%;
-            vertical-align: top;
-        }
-
-        .post-overlay {
-            background: rgba(0, 0, 0, .4);
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            top: 0;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-
-        .post:hover .post-overlay {
-            display: flex;
-        }
-
-        .post-likes,
-        .post-comments {
-            width: 80px;
-            margin: 5px;
-            font-weight: bold;
-            text-align: center;
-            display: inline-block;
-        }
-
-        @media screen and (max-width: 767px) {
-            .post-list {
-                gap: 3px;
-            }
-            .icon {
-                width: 45px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -169,12 +29,12 @@
             <img src="img/cat11.jpg" alt="" class="profile-photo">
         </div>
         <div class="user-details">
-            <h2 class="username">YokiSwag</h2>
-            <span class="posts"><strong>12</strong> posts</span>
-            <span class="followers"><strong>101</strong> followers</span>
-            <span class="following"><strong>0</strong> followed</span>
-            <h3 class="alias">Y o k a i</h2>
-            <p class="description">2nd summer<br />
+            <h2 class="item username">YokiSwag</h2>
+            <span class="item posts"><strong>12</strong> posts</span>
+            <span class="item followers"><strong>101</strong> followers</span>
+            <span class="item following"><strong>0</strong> followed</span>
+            <h3 class="item alias">Y o k a i</h2>
+            <p class="item description">2nd summer<br />
                 I like to sleep and eat catnip<br />
                 Tiny tigger
             </p>
